@@ -4,6 +4,10 @@ Upgrade (upgrade) and Updates (update)
 You can download updates for THOR with ``thor-util.exe``
 (Windows) or ``thor-util`` (Linux, macOS).
 
+.. note:: 
+   THOR Util can not update THOR binaries and signatures whose license was obtained through the ASGARD Management Center.
+   Use the Management Center API for this. Only the Nextron Customer Portal is accepted as a license source.
+
 Running ``thor-util --help`` shows three options that seem to have a very
 similar meaning: "upgrade", "update" and "download".
 
