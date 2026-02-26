@@ -114,3 +114,19 @@ https://update1.nextron-systems.com/info.php
    :alt: Update server information
 
    Update server information
+
+Upgrading to a specific version
+-------------------------------
+
+To upgrade to a specific THOR version, use the ``--version`` flag:
+
+.. code:: doscon
+
+   C:\thor>thor-util.exe upgrade --version 10.7.27
+
+.. hint::
+   It is also possible to specify more complex expressions instead of a single version. The full syntax
+   is described `here <https://github.com/Masterminds/semver#checking-version-constraints>`_.
+   To e.g. upgrade to the latest THOR 10, you can use ``upgrade --version ^10.0.0``.
+
+When ``--version`` is used, ``--techpreview`` is ignored.
