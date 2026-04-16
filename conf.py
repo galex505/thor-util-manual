@@ -5,8 +5,7 @@ copyright = '2026, Nextron Systems GmbH'
 author = 'Nextron Systems GmbH'
 version='1.0'
 extensions = [
-    'sphinx.ext.autosectionlabel',
-    'sphinx_rtd_theme'
+    'sphinx.ext.autosectionlabel'
 ]
 templates_path = ['_templates']
 source_suffix = '.rst'
@@ -36,4 +35,6 @@ autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 3
 # disable epub mimetype warnings
 suppress_warnings = ["epub.unknown_project_files"]
-
+# Ignore anchors but still check link for the listed sites.
+# E.g., required for websites that add anchors via JavaScript.
+linkcheck_anchors_ignore_for_url = ['^https://github.com']
