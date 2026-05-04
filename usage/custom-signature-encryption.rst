@@ -8,6 +8,9 @@ THOR-Util's "encrypt" feature.
    
    C:\thor>thor-util.exe encrypt --help
 
+.. note::
+   THOR Util and THOR Util Lite use different signature encryption methods. Custom signatures must therefore be encrypted using the corresponding version of THOR Util.
+
 .. figure:: ../images/thor-util-encrypt.png
    :alt: THOR Util's Encrypt Feature Help
   
